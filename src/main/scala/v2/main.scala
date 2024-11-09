@@ -1,8 +1,8 @@
 package v2
 
-import v2.Order.*
+import Order.*
 
-@main def version_2 =
+@main def main =
 
   //////////////////////////////////////////////////////////////////////
 

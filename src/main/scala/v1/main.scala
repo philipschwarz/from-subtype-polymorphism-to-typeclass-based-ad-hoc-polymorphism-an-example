@@ -1,6 +1,6 @@
 package v1
 
-@main def version_1 =
+@main def main =
 
   assert( Person("John", 25) < Person("Jane", 30) ) 
   
