@@ -1,6 +1,8 @@
-import v2.Order
+package v2
 
-package object v2:
+import Order.*
+
+object Orders:
 
   given Order[Int] with
     override def compare(l: Int, r: Int): Int = l - r

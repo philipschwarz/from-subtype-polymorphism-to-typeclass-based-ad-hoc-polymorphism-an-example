@@ -1,6 +1,6 @@
 package v2
 
-import v2.Order.*
+import Order.*
 
 def order[A: Order](as: List[A]): List[A] = as match
   case Nil => Nil
