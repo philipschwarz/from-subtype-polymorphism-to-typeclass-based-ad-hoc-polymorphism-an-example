@@ -5,7 +5,7 @@ trait Order[A]:
 
 object Order:
 
-  def apply[A](using orderable: Order[A]): Order[A] = orderable
+  def apply[A](using order: Order[A]): Order[A] = order
 
   extension [A](l: A)(using order: Order[A])
     def <(r: A): Boolean = order.compare(l, r) < 0
