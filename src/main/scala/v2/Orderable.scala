@@ -1,4 +1,4 @@
-package v1
+package v2
 
 trait Orderable[A]:
   def compare(other: A): Int

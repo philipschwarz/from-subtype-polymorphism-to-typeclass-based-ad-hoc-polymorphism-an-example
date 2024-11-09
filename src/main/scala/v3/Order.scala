@@ -1,4 +1,4 @@
-package v2
+package v3
 
 trait Order[A]:
   def compare(l: A, r: A): Int

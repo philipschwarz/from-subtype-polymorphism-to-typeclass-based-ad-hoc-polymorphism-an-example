@@ -1,10 +1,5 @@
 package v1
 
 @main def main =
-
-  assert( Person("John", 25) < Person("Jane", 30) ) 
-  
-  val people = List( Person("Jane", 30), Person("John", 25), Person("Jim", 18) )
-  val peopleByIncreasingAge = List( Person("Jim", 18), Person("John", 25), Person("Jane", 30) )
-
-  assert(people.ordered == peopleByIncreasingAge)
+  assert(order(List(4, 1, 3, 5, 2)) == List(1, 2, 3, 4, 5))
+  assert(List(4, 1, 3, 5, 2).ordered == List(1, 2, 3, 4, 5))
